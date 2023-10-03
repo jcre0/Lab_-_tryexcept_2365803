@@ -1,0 +1,67 @@
+Try Except
+But du laboratoire
+-	Gestion d’erreur avec Try Except
+-	Familiarisation avec PyCharm
+-	Lire le code d’un autre programmeur
+-	Jeux d’essais
+Tâche
+Des petites applications vous sont fournies. Il y a des erreurs qui peuvent être
+déclenchées à l’exécution de celles-ci. Votre tâche est d’en modifier le code pour les
+attraper avant qu’elles fassent planter l’exécution. Un message significatif doit toujours être
+affiché à l’utilisateur.
+S’il est possible de poursuivre l’exécution faites-le, sinon fermez l’application gracieusement.
+Pour faire sortir les erreurs allez-y de valeurs variées dans vos jeux d’essais.
+
+Ce sont des énoncés et du code avec lequel vous devriez déjà être familier,
+mais nous n’avions fait aucune validation alors il devrait être simple de trouver des
+exceptions avec vos jeux d’essais.
+
+
+Abonnement escalade (try except)
+Nicolas aime bien se garder actif, mais pas trop les sports d’équipes alors un des sports qu’il préfère est l’escalade. Plus précisément l’escalade de blocs, qui ne nécessite pas de partenaire assureur. Nicolas tient tout de même à rentabiliser son abonnement et il cherche à savoir combien de fois par semaine doit-il aller au gym lorsqu’il prend un abonnement de 1, 3, 6 ou 12 mois par rapport à payer une entrée à l’unité. Il ne faut pas oublier la taxe de vente qui est de 14,975 %.
+
+Les abonnements coûtent :
+1 mois - 95.00 $,
+3 mois - 265.00 $,
+6 mois - 430.00 $,
+12 mois - 695.00 $
+L’application doit d’abord demander à l’utilisateur pour combien de mois il désire son abonnement [1, 3, 6, 12] et ensuite afficher les résultats suivants :
+●	Nombre de visites par semaine pour que ça soit moins cher que payer à l’unité.
+●	Prix réel s’il y va 2 fois par semaine pour la durée de l’abonnement.
+
+Modification à faire au code :
+Demandez le prix d’entrée à l’unité et gérer les exceptions possibles. Le prix d’entrée doit être
+un nombre réel positif. Si le prix d’entrée n’est pas vailde, affichez un message d’erreur descriptif
+et fermez l’application grâce à sys.exit("Message de sortie ici.").
+Valider aussi, avec le pouvoir des exceptions, que le nombre de mois d’abonnement est dans la
+liste acceptée. Si leur choix n’est pas valide, attribuez-y un budget de zéro avec un message explicatif.
+
+
+Loisirs des enfants (try except)
+Nicolas vit maintenant une relation harmonieuse avec Rachel. Ils ont 2 petits garçons de 7 et 9 ans. Le plus jeune, Réguinguin, aimerait s’inscrire à 3 activités cet automne : des cours de batteries, du badminton et du cheerleading. Le plus vieux, Clapoche, souhaite faire de l’équitation et des cours des arts du cirque.
+
+Malheureusement, Nicolas dépense tellement d’argent en jeux sur Steam qu’il n’a pas les moyens financiers d’inscrire ses enfants à tous les cours qu’ils demandent. Ils sont donc restreints à choisir une inscription chacun.
+
+Budget mensuel pour les cours : 400 $
+Coût mensuel de chaque activité :
+batterie	120 $
+badminton	60 $
+cheerleading	90 $
+équitation	300 $
+arts du cirque	160 $
+
+Afficher un menu des cours.
+Demander aux garçons d’entrer leur choix favori.
+Reste-t-il assez d’argent pour aller à la crème glacée (10 $) ? Au cinéma (40 $) ? Au parc de trampoline (80 $) ? Est-ce qu’on dépasse le budget ?
+
+Modification à faire au code :
+Demandez le budget mensuel pour les cours et gérer les exceptions possibles. Le budget doit être un entier positif, sinon fermez l’application en insultant votre usager sys.exit("Message de sortie ici."). Ensuite, vous devez aussi valider les choix d’activités pour les enfants. Si leur choix n’est pas valide, attribuez-y un budget de zéro avec un message explicatif.
+
+
+Mélange de peinture (try except)
+Nicolas doit repeindre quelques pièces de sa maison. Heureusement, ses préférences son très simple. Malheureusement, son budget est minimal. Il a donc décidé d’acheter des galons de peintures des 3 couleurs primaires [cyan, magenta, jaune] et il va faire les mélanges lui-même pour peinturer ses pièces avec des couleurs secondaires [vert, orange, violet]. Cependant, lorsque vient le temps de faire le mélange, Nicolas a oublié ses notions de bases d’art plastique et ne sait plus quel mélange donne quel résultat.
+
+Créez une application qui va afficher un menu avez les choix de couleurs primaires puis demander 2 couleurs primaires différentes à Nicolas et lui afficher la couleur secondaire issue du mélange.
+
+Modification à faire au code :
+Lorsque vous demandez les couleurs à mélanger à l’utilisateur, vous devez lever des exceptions personnalisées pour vous assurer que les entrées sont valides pour votre programme. Si les entrées ne sont pas valides, affichez un message d’erreur descriptif et fermez l’application grâce à sys.exit("Message de sortie ici.").
